@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo_title">
+            <img src="assets/images/Minecraft-Heart-PNG.png" alt="Hearts">
+            <h1>AluraGeek</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="container_products" id="meusProdutos">
+            <h1 class="products_title">MEUS PRODUTOS:</h1>
+            <section class="products" id="produtos">
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/produto_1_1x.png" alt="Boneco Hagrid">
+                    <h3 class="products_description">Stormtrooper</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/classic_gameboy_000.jpg" alt="Boneco Ron Weasley">
+                    <h3 class="products_description">Game Boy Classic</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/produto_1_1x.png" alt="Boneco Hagrid">
+                    <h3 class="products_description">Stormtrooper</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/classic_gameboy_000.jpg" alt="Boneco Ron Weasley">
+                    <h3 class="products_description">Game Boy Classic</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/produto_1_1x.png" alt="Boneco Hagrid">
+                    <h3 class="products_description">Stormtrooper</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/classic_gameboy_000.jpg" alt="Boneco Ron Weasley">
+                    <h3 class="products_description">Game Boy Classic</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/produto_1_1x.png" alt="Boneco Hagrid">
+                    <h3 class="products_description">Stormtrooper</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/classic_gameboy_000.jpg" alt="Boneco Ron Weasley">
+                    <h3 class="products_description">Game Boy Classic</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products_block">
+                    <img class="products_image" src="assets/images/produto_1_1x.png" alt="Boneco Hagrid">
+                    <h3 class="products_description">Stormtrooper</h3>
+                    <div class="products_bar">
+                        <p class="products_price">$60,00</p>
+                        <button class="products_discard">
+                            <img src="assets/images/trash-2-24.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="add_product" id="adicionar">
+            <h1>ADICIONAR <br> PRODUTO:</h1>
+            <form id="addProductForm" enctype="multipart/form-data">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Nome..." required>
+                </div>
+                
+                <div>
+                    <input type="number" id="price" name="price" min="0" step="0.01" placeholder="Valor..." required>
+                </div>              
+
+                    <input type="text" id="Image" name="image" accept="image/*" placeholder="imagem..." required>
+                </div>
+                
+                <div class="product_button">
+                    <button type="submit">Guardar</button>
+                    <button type="button" class="cancel" onclick="limparForm()">Limpar</button>
+                </div>
+            </form>
+            
+        </section>
+
+        <div id="message" class="message"></div>
+
+    </main>
+    <script src="conectaAPI.js" type="module"></script>
+    <script src="mostrarProdutos.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+
+</body>
+<footer class="footer">
+    <div class="footer_title">
+        <img src="assets/images/Minecraft-Heart-PNG.png" alt="heart">
+        <h1>AluraGeek</h1>
+    </div>
+    <p>Desenvolvido por Marcus Daniel</p>
+    <script src="assets/js/script.js"></script>
+</html>
